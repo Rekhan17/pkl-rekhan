@@ -1,0 +1,113 @@
+body{
+    color: rgb(52, 51, 51);
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+span{
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+h1{
+    font-size: 37px;
+}
+
+h1,h2{
+    font-family: system-ui;
+    color: rgb(52, 51, 51);
+}
+
+#pading{
+    padding:10;
+}
+
+.link{
+    color: #007aff;
+}
+
+.link:active{
+    color: red;
+}
+
+.label-item{
+    font-size: 95%;
+    color: #007aff;
+}
+
+.label-item:active{
+    color: red;
+}
+
+.item-list{
+    font-family: 'Times New Roman';
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.link:hover{
+    text-decoration: underline;
+}
+
+a.label-item:hover{
+    border-bottom-width:1px;
+    border-bottom-style: dotted;
+}
+
+.box{
+    width:55%;
+	background-color: rgb(209, 209, 209);
+	padding:20px 20px;
+    border:1px solid;
+}
+
+table {
+    font-family: system-ui;
+    border-collapse: collapse;
+    margin-bottom: 45px;
+    width: 100%;
+   
+}
+
+tr{
+    color: rgb(53, 52, 52);
+}
+
+th{
+    border: 1px solid black;
+    text-align: left;
+}
+
+td {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+th,td{
+    padding: 10px;
+    font-size: 70%;
+}
+
+tr:hover{
+    background-color: rgb(197, 196, 196);
+}
+
+tr.blok:hover{
+    background-color: rgb(197, 196, 196);
+}
+
+tr.blok{
+    background-color: #efefef;
+}
+
+
+
