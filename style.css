@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /* agar ketika klik link di daftar isi dan pindah ke element yang dituju, perpindahannya menjadi lebih smooth*/
+}
+
 body{
     color: rgb(52, 51, 51);
     width: 60%;
