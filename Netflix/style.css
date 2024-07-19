@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+body > .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner > .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.header > img {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > .nav {
+    width: 200px;
+    height: 32px;
+    padding: 0px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar > .button-top {
+    height: 32px;
+    padding: 0px 20px;
+    border: 0px;
+    border-radius: 5px;
+    background: #e50914;
+    cursor: pointer;
+}
+
+.button-top > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar > .button-top:hover {
+    background: #f40612;
+}
+
+.navbar > .button-top:active {
+    background: #e50914;
+}
+
+.banner > .content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content-body > h1 {
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.content-body > h3 {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 2;
+}
+
+.content-body > p {
+    font-size: 20px;
+    line-height: 3;
+}
+
+.email > input {
+    width: 400px;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 15px;
+    border-radius: 5px; 
+    border: 1px solid #fff;
+    margin-right: 5px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.email > button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    background: #e50914;
+    cursor: pointer;
+}
+
+.email > button:hover {
+    background: #f40612;
+}
+
+.email > button:active {
+    background: #e50914;
+}
+
+body > hr {
+    height: 7px;
+    background-color: rgb(89, 89, 89);
+    border: none;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+body > .body-satu {
+    padding: 25px 3%;
+    font-size: 22px;
+}
+
+.body-satu > .elemen-satu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+
+.elemen-satu >.texs-col {
+    flex: 1;
+}
+
+.texs-col > h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.texs-col > p {
+    font-size: 23px;
+}
+
+.elemen-satu > .img-col {
+    flex: 1;
+    position: relative;
+}
+
+.img-col img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.img-col video {
+    position: absolute;
+    top: 48%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    z-index: 1;
+}
+ 
+.elemen-satu > .img-col-2 {
+    flex: 1;
+    position: relative;
+}
+
+.img-col-2 img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.img-col-2 video {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 1;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+body > .faq {
+    padding: 50px 3%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq > h2 {
+    padding: 40px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.faq > .accordion {
+    margin : auto;
+    width: 100%;
+}
+
+.accordion > li {
+    list-style: none;
+    width: 100%;
+    padding: 2px;
+}
+
+.accordion > li label {
+    display: flex;
+    align-items: center;
+    padding: 20px ;
+    font-size: 25px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion > li label:hover {
+    background: rgba(98, 98, 98, 0.6);
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion > li .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.content > p {
+    margin-top: 10px;
+}
+
+.accordion > li input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+    
+}
+
+.accordion > li input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq > .your-email {
+   margin-top: 35px;
+}
+
+.your-email > small {
+    font-size: 22px;
+}
+
+.your-email > .email{
+    margin-top: 20px;
+}
+
+/* ----------------------------------------------------------- */
+
+.footer {
+    padding : 50px 3%;
+}
+
+.footer  h2{
+    font-size: 18px;
+    padding: 0 1% ;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.footer h2 > a {
+    color: #777;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; 
+}
+.col {
+    flex: 1; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+.col a {
+    display: block; 
+    margin-bottom: 10px; 
+    color: #777;
+}
+
+.langue {
+    padding: 1%;
+    color: #777;
+}
+
+.footer .langue .nav-1 {
+    width: 200px;
+    height: 32px;
+    color: #fff;
+    padding: 0px 20px;
+    border-radius: 5px;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
